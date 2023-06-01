@@ -18,8 +18,10 @@ function ProductList() {
   }, []);
   return (
     <>
-      <div className="ui grid container">
-        <Product />
+      <div className=" container-fluid">
+        <div className="row">
+          <Product />
+        </div>
       </div>
     </>
   );

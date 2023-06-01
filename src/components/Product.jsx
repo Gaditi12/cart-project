@@ -6,18 +6,16 @@ export default function Product() {
   const renderList = item.map((product) => {
     const { id, title, image, price, category } = product;
     return (
-      <div className="" key={id}>
+      <div className="col-lg-4">
         <Link to={`/product/${id}`}>
-          <div className="ui link cards">
-            <div className="card">
-              <div className="image">
-                <img src={image} alt={title} />
-              </div>
-              <div className="content">
-                <div className="header">{title}</div>
-                <div className="meta price">$ {price}</div>
-                <div className="meta">{category}</div>
-              </div>
+          <div style={{ width: "18rem" }} className="card card-box ">
+            <div className=" col-md-4 ">
+              <img src={image} alt={title} className="card-img-top image" />
+            </div>
+            <div className="card-body mt-3">
+              <div className="header">{title}</div>
+              <div className="meta price">$ {price}</div>
+              <div className="meta">{category}</div>
             </div>
           </div>
         </Link>
@@ -26,3 +24,4 @@ export default function Product() {
   });
   return <>{renderList}</>;
 }
+//style={{ width: "18rem" }} className=" mx-2 mt-4 "
