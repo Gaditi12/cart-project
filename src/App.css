@@ -7,6 +7,7 @@
 .ui.menu.fixed {
   height: 60px;
   padding-top: 15px;
+  padding-bottom: 15px;
   border-bottom: #514f4f;
 }
 .ui.grid.container {

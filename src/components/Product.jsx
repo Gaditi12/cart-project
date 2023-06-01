@@ -24,4 +24,3 @@ export default function Product() {
   });
   return <>{renderList}</>;
 }
-//style={{ width: "18rem" }} className=" mx-2 mt-4 "
