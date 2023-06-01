@@ -56,3 +56,6 @@
 .ui.grid > .row > img {
   height: 100%;
 }
+.four .wide .column {
+  display: inline-block;
+}
