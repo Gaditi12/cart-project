@@ -53,6 +53,10 @@ image {
   background: #fff;
 }
 
+.navbar-nav a {
+  font-size: 18px;
+}
+
 /* .ui.grid > .row > .column.lp {
   padding: 20px 40px 20px 20px;
   align-self: flex-start !important;

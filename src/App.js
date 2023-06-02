@@ -4,15 +4,20 @@ import ProductList from "./components/ProductList";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import ProductDetails from "./components/ProductDetails";
+import ProductComponents from "./components/ProductComponents";
+import Home from "./components/Home";
+import Item from "./components/Item";
 export default function App() {
   return (
     <>
       <div>
         <Router>
           <Header />
+
           <Routes>
-            <Route path="/" Component={ProductList} />
-            <Route path="/product/:productID" Component={ProductDetails} />
+            <Route path="/" Component={Home} />
+            <Route path="/products" Component={ProductComponents} />
+            <Route path="/products/:id" Component={Item} />
             <Route>Path not found !</Route>
           </Routes>
         </Router>
