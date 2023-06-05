@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import Skeleton from "react-loading-skeleton";
 const ProductComponents = () => {
@@ -75,7 +75,7 @@ const ProductComponents = () => {
           return (
             <>
               <div className="col-md-3 mb-4">
-                <Link to={`/product/${product.id}`}>
+                <NavLink to={`/product/${product.id}`}>
                   <div class="card h-100 text-center p-4" key={product.id}>
                     <img
                       src={product.image}
@@ -96,7 +96,7 @@ const ProductComponents = () => {
                       </NavLink>
                     </div>
                   </div>
-                </Link>
+                </NavLink>
               </div>
             </>
           );

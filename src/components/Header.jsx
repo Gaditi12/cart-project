@@ -1,6 +1,9 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { useSelector } from "react-redux";
+
 export default function Header() {
+  const data = useSelector((state) => state.productReducer);
   return (
     <>
       <div>
@@ -55,7 +58,8 @@ export default function Header() {
                   <i className="fa fa-sign-in me-1"></i>Login
                 </NavLink>
                 <NavLink to="/cart" className="btn btn-outline-dark ms-2">
-                  <i className="fa fa-shoppiong-cart me-1 "></i>Cart(0)
+                  <i className="fa fa-shoppiong-cart me-1 "></i>Cart (
+                  {data.cart.length})
                 </NavLink>
               </div>
             </div>
